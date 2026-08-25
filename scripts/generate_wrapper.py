@@ -395,6 +395,7 @@ def create_prefixes(config: dict[str, Any]) -> str:
 @prefix csvw: <http://www.w3.org/ns/csvw#> .
 
 @prefix equipment: <https://w3id.org/batteryequipment/public/ontology#> .
+@prefix coater: <https://w3id.org/coater/public/ontology#> .
 @prefix {domain_prefix}: <{domain_namespace}> .
 @prefix {individuals_prefix}: <{individuals_namespace}> .
 @prefix {channel_prefix}: <{channel_namespace}> .

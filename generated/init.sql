@@ -1,0 +1,60 @@
+-- init.sql
+CREATE EXTENSION IF NOT EXISTS timescaledb;
+
+-- Create channel tables
+CREATE TABLE IF NOT EXISTS web.speed (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS unwinder.current.roll.diameter (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS unwinder.tension (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS rewinder.current.roll.diameter (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS rewinder.tension (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS slot.die.upper.horizontal.target.positioning (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS slot.die.upper.vertical.target.positioning (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS slot.die.upper.horizontal.positioning (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS slot.die.upper.vertical.positioning (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS oven1.temperature.setpoint (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS oven1.inlet.fan.speed (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS oven1.outlet.fan.speed (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS oven1.inlet.temperature (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS oven1.outlet.temperature (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS oven1.ir.power (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS oven2.temperature.setpoint (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS oven2.inlet.fan.speed (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS oven2.outlet.fan.speed (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS oven2.inlet.temperature (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS oven2.outlet.temperature (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS oven2.ir.power (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS oven3.temperature.setpoint (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS oven3.inlet.fan.speed (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS oven3.outlet.fan.speed (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS oven3.inlet.temperature (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS oven3.outlet.temperature (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS oven3.ir.power (time TIMESTAMPTZ NOT NULL, value REAL NOT NULL);
+
+-- Convert the channel tables into hypertables
+SELECT create_hypertable('web.speed', 'time');
+SELECT create_hypertable('unwinder.current.roll.diameter', 'time');
+SELECT create_hypertable('unwinder.tension', 'time');
+SELECT create_hypertable('rewinder.current.roll.diameter', 'time');
+SELECT create_hypertable('rewinder.tension', 'time');
+SELECT create_hypertable('slot.die.upper.horizontal.target.positioning', 'time');
+SELECT create_hypertable('slot.die.upper.vertical.target.positioning', 'time');
+SELECT create_hypertable('slot.die.upper.horizontal.positioning', 'time');
+SELECT create_hypertable('slot.die.upper.vertical.positioning', 'time');
+SELECT create_hypertable('oven1.temperature.setpoint', 'time');
+SELECT create_hypertable('oven1.inlet.fan.speed', 'time');
+SELECT create_hypertable('oven1.outlet.fan.speed', 'time');
+SELECT create_hypertable('oven1.inlet.temperature', 'time');
+SELECT create_hypertable('oven1.outlet.temperature', 'time');
+SELECT create_hypertable('oven1.ir.power', 'time');
+SELECT create_hypertable('oven2.temperature.setpoint', 'time');
+SELECT create_hypertable('oven2.inlet.fan.speed', 'time');
+SELECT create_hypertable('oven2.outlet.fan.speed', 'time');
+SELECT create_hypertable('oven2.inlet.temperature', 'time');
+SELECT create_hypertable('oven2.outlet.temperature', 'time');
+SELECT create_hypertable('oven2.ir.power', 'time');
+SELECT create_hypertable('oven3.temperature.setpoint', 'time');
+SELECT create_hypertable('oven3.inlet.fan.speed', 'time');
+SELECT create_hypertable('oven3.outlet.fan.speed', 'time');
+SELECT create_hypertable('oven3.inlet.temperature', 'time');
+SELECT create_hypertable('oven3.outlet.temperature', 'time');
+SELECT create_hypertable('oven3.ir.power', 'time');
