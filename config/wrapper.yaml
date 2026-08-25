@@ -1,0 +1,26 @@
+wrapper:
+  identifier: equipment
+  name: Equipment name
+  description: Semantic wrapper for the equipment
+
+ontology:
+  channel_prefix: equipment-table
+  channel_namespace: https://example.org/equipment-table/ontology#
+  channel_ontology_iri: https://example.org/equipment-table/ontology
+
+  individuals_prefix: equipment-ind
+  individuals_namespace: https://example.org/equipment-individuals/ontology#
+  individuals_ontology_iri: https://example.org/equipment-individuals/ontology
+
+  domain_prefix: equipment
+  domain_namespace: https://example.org/equipment/ontology#
+  domain_ontology_iri: https://example.org/equipment/ontology
+
+files:
+  channels: config/channels.csv
+  individuals: ontology/equipment_individuals.ttl
+
+  generated_ontology: generated/table_channels_equipment.ttl
+  nodelist: generated/nodelist.csv
+  database_schema: generated/init.sql
+  visualization: generated/visualization/graph.html
