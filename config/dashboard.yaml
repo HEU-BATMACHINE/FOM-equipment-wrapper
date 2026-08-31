@@ -1,0 +1,45 @@
+datasource:
+  type: grafana-postgresql-datasource
+  uid: timescaledb
+
+database:
+  time_column: time
+  value_column: value
+
+dashboard:
+  refresh: 10s
+  default_from: now-6h
+  default_to: now
+  editable: true
+  schema_version: 39
+  tags:
+    - BATMACHINE
+    - equipment-wrapper
+
+generic:
+  title: FOM generic equipment dashboard
+  description: >
+    This dashboard plots measurement channels represented by semantic
+    properties that can be used across compatible coating and drying
+    equipment. Signals are grouped according to their semantic property
+    and physical unit.
+  properties:
+    - coater:hasWinderDiameterData
+    - coater:hasWinderTensionData
+    - coater:hasFurnaceTemperatureData
+    - coater:hasFurnaceFanData
+
+equipment_specific:
+  title: FOM equipment-specific dashboard
+  description: >
+    This dashboard plots measurement and control channels selected for
+    the FOM roll-to-roll coater. These panels represent functionality
+    configured specifically for the FOM equipment wrapper.
+  properties:
+    - coater:hasWebSpeedData
+    - coater:hasCoaterHeadHorizontalPositionControl
+    - coater:hasCoaterHeadVerticalPositionControl
+    - coater:hasCoaterHeadHorizontalPositionData
+    - coater:hasCoaterHeadVerticalPositionData
+    - coater:hasFurnaceTemperatureControl
+    - coater:hasFurnacePowerData

@@ -38,7 +38,7 @@ fom-table:web.speed_schema csvw:columns fom-table:web.speed_schema_col2 .
 fom-table:web.speed_schema csvw:primaryKey "time" .
 
 fom-table:web.speed_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_R2R ;
+    chameo:hasMeasurementSample fom-ind:FOM_R2R ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:web.speed .
 
 fom-table:web.speed_schema_col1 a csvw:Column .
@@ -50,7 +50,7 @@ fom-table:web.speed_schema_col1 csvw:required true .
 fom-table:web.speed_schema_col2 a csvw:Column .
 fom-table:web.speed_schema_col2 csvw:propertyUrl coater:hasWebSpeedData .
 fom-table:web.speed_schema_col2 csvw:datatype xsd:decimal .
-fom-table:web.speed_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#MetrePerSecond> .
+fom-table:web.speed_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#MetrePerSecond> .
 fom-table:web.speed_schema_col2 csvw:name "value" .
 fom-table:web.speed_schema_col2 csvw:required true .
 
@@ -65,7 +65,7 @@ fom-table:unwinder.current.roll.diameter_schema csvw:columns fom-table:unwinder.
 fom-table:unwinder.current.roll.diameter_schema csvw:primaryKey "time" .
 
 fom-table:unwinder.current.roll.diameter_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_UnwindingDevice ;
+    chameo:hasMeasurementSample fom-ind:FOM_UnwindingDevice ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:unwinder.current.roll.diameter .
 
 fom-table:unwinder.current.roll.diameter_schema_col1 a csvw:Column .
@@ -77,7 +77,7 @@ fom-table:unwinder.current.roll.diameter_schema_col1 csvw:required true .
 fom-table:unwinder.current.roll.diameter_schema_col2 a csvw:Column .
 fom-table:unwinder.current.roll.diameter_schema_col2 csvw:propertyUrl coater:hasWinderDiameterData .
 fom-table:unwinder.current.roll.diameter_schema_col2 csvw:datatype xsd:decimal .
-fom-table:unwinder.current.roll.diameter_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#MilliMetre> .
+fom-table:unwinder.current.roll.diameter_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#MilliMetre> .
 fom-table:unwinder.current.roll.diameter_schema_col2 csvw:name "value" .
 fom-table:unwinder.current.roll.diameter_schema_col2 csvw:required true .
 
@@ -92,7 +92,7 @@ fom-table:unwinder.tension_schema csvw:columns fom-table:unwinder.tension_schema
 fom-table:unwinder.tension_schema csvw:primaryKey "time" .
 
 fom-table:unwinder.tension_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_UnwindingDevice ;
+    chameo:hasMeasurementSample fom-ind:FOM_UnwindingDevice ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:unwinder.tension .
 
 fom-table:unwinder.tension_schema_col1 a csvw:Column .
@@ -104,7 +104,7 @@ fom-table:unwinder.tension_schema_col1 csvw:required true .
 fom-table:unwinder.tension_schema_col2 a csvw:Column .
 fom-table:unwinder.tension_schema_col2 csvw:propertyUrl coater:hasWinderTensionData .
 fom-table:unwinder.tension_schema_col2 csvw:datatype xsd:decimal .
-fom-table:unwinder.tension_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#Newton> .
+fom-table:unwinder.tension_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#Newton> .
 fom-table:unwinder.tension_schema_col2 csvw:name "value" .
 fom-table:unwinder.tension_schema_col2 csvw:required true .
 
@@ -119,7 +119,7 @@ fom-table:rewinder.current.roll.diameter_schema csvw:columns fom-table:rewinder.
 fom-table:rewinder.current.roll.diameter_schema csvw:primaryKey "time" .
 
 fom-table:rewinder.current.roll.diameter_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_RewindingDevice ;
+    chameo:hasMeasurementSample fom-ind:FOM_RewindingDevice ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:rewinder.current.roll.diameter .
 
 fom-table:rewinder.current.roll.diameter_schema_col1 a csvw:Column .
@@ -131,7 +131,7 @@ fom-table:rewinder.current.roll.diameter_schema_col1 csvw:required true .
 fom-table:rewinder.current.roll.diameter_schema_col2 a csvw:Column .
 fom-table:rewinder.current.roll.diameter_schema_col2 csvw:propertyUrl coater:hasWinderDiameterData .
 fom-table:rewinder.current.roll.diameter_schema_col2 csvw:datatype xsd:decimal .
-fom-table:rewinder.current.roll.diameter_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#MilliMetre> .
+fom-table:rewinder.current.roll.diameter_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#MilliMetre> .
 fom-table:rewinder.current.roll.diameter_schema_col2 csvw:name "value" .
 fom-table:rewinder.current.roll.diameter_schema_col2 csvw:required true .
 
@@ -146,7 +146,7 @@ fom-table:rewinder.tension_schema csvw:columns fom-table:rewinder.tension_schema
 fom-table:rewinder.tension_schema csvw:primaryKey "time" .
 
 fom-table:rewinder.tension_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_RewindingDevice ;
+    chameo:hasMeasurementSample fom-ind:FOM_RewindingDevice ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:rewinder.tension .
 
 fom-table:rewinder.tension_schema_col1 a csvw:Column .
@@ -158,7 +158,7 @@ fom-table:rewinder.tension_schema_col1 csvw:required true .
 fom-table:rewinder.tension_schema_col2 a csvw:Column .
 fom-table:rewinder.tension_schema_col2 csvw:propertyUrl coater:hasWinderTensionData .
 fom-table:rewinder.tension_schema_col2 csvw:datatype xsd:decimal .
-fom-table:rewinder.tension_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#Newton> .
+fom-table:rewinder.tension_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#Newton> .
 fom-table:rewinder.tension_schema_col2 csvw:name "value" .
 fom-table:rewinder.tension_schema_col2 csvw:required true .
 
@@ -172,8 +172,8 @@ fom-table:slot.die.upper.horizontal.target.positioning_schema csvw:columns fom-t
 fom-table:slot.die.upper.horizontal.target.positioning_schema csvw:columns fom-table:slot.die.upper.horizontal.target.positioning_schema_col2 .
 fom-table:slot.die.upper.horizontal.target.positioning_schema csvw:primaryKey "time" .
 
-fom-table:slot.die.upper.horizontal.target.positioning_process a equipment:DeviceControlProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_CoatingDevice ;
+fom-table:slot.die.upper.horizontal.target.positioning_process a fom-table:DeviceControlProcess ;
+    chameo:hasInteractionWithSample fom-ind:FOM_CoatingDevice ;
     emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 fom-table:slot.die.upper.horizontal.target.positioning .
 
 fom-table:slot.die.upper.horizontal.target.positioning_schema_col1 a csvw:Column .
@@ -185,7 +185,7 @@ fom-table:slot.die.upper.horizontal.target.positioning_schema_col1 csvw:required
 fom-table:slot.die.upper.horizontal.target.positioning_schema_col2 a csvw:Column .
 fom-table:slot.die.upper.horizontal.target.positioning_schema_col2 csvw:propertyUrl coater:hasCoaterHeadHorizontalPositionControl .
 fom-table:slot.die.upper.horizontal.target.positioning_schema_col2 csvw:datatype xsd:decimal .
-fom-table:slot.die.upper.horizontal.target.positioning_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#MilliMetre> .
+fom-table:slot.die.upper.horizontal.target.positioning_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#MilliMetre> .
 fom-table:slot.die.upper.horizontal.target.positioning_schema_col2 csvw:name "value" .
 fom-table:slot.die.upper.horizontal.target.positioning_schema_col2 csvw:required true .
 
@@ -199,8 +199,8 @@ fom-table:slot.die.upper.vertical.target.positioning_schema csvw:columns fom-tab
 fom-table:slot.die.upper.vertical.target.positioning_schema csvw:columns fom-table:slot.die.upper.vertical.target.positioning_schema_col2 .
 fom-table:slot.die.upper.vertical.target.positioning_schema csvw:primaryKey "time" .
 
-fom-table:slot.die.upper.vertical.target.positioning_process a equipment:DeviceControlProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_CoatingDevice ;
+fom-table:slot.die.upper.vertical.target.positioning_process a fom-table:DeviceControlProcess ;
+    chameo:hasInteractionWithSample fom-ind:FOM_CoatingDevice ;
     emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 fom-table:slot.die.upper.vertical.target.positioning .
 
 fom-table:slot.die.upper.vertical.target.positioning_schema_col1 a csvw:Column .
@@ -212,7 +212,7 @@ fom-table:slot.die.upper.vertical.target.positioning_schema_col1 csvw:required t
 fom-table:slot.die.upper.vertical.target.positioning_schema_col2 a csvw:Column .
 fom-table:slot.die.upper.vertical.target.positioning_schema_col2 csvw:propertyUrl coater:hasCoaterHeadVerticalPositionControl .
 fom-table:slot.die.upper.vertical.target.positioning_schema_col2 csvw:datatype xsd:decimal .
-fom-table:slot.die.upper.vertical.target.positioning_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#MilliMetre> .
+fom-table:slot.die.upper.vertical.target.positioning_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#MilliMetre> .
 fom-table:slot.die.upper.vertical.target.positioning_schema_col2 csvw:name "value" .
 fom-table:slot.die.upper.vertical.target.positioning_schema_col2 csvw:required true .
 
@@ -227,7 +227,7 @@ fom-table:slot.die.upper.horizontal.positioning_schema csvw:columns fom-table:sl
 fom-table:slot.die.upper.horizontal.positioning_schema csvw:primaryKey "time" .
 
 fom-table:slot.die.upper.horizontal.positioning_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_CoatingDevice ;
+    chameo:hasMeasurementSample fom-ind:FOM_CoatingDevice ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:slot.die.upper.horizontal.positioning .
 
 fom-table:slot.die.upper.horizontal.positioning_schema_col1 a csvw:Column .
@@ -239,7 +239,7 @@ fom-table:slot.die.upper.horizontal.positioning_schema_col1 csvw:required true .
 fom-table:slot.die.upper.horizontal.positioning_schema_col2 a csvw:Column .
 fom-table:slot.die.upper.horizontal.positioning_schema_col2 csvw:propertyUrl coater:hasCoaterHeadHorizontalPositionData .
 fom-table:slot.die.upper.horizontal.positioning_schema_col2 csvw:datatype xsd:decimal .
-fom-table:slot.die.upper.horizontal.positioning_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#MilliMetre> .
+fom-table:slot.die.upper.horizontal.positioning_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#MilliMetre> .
 fom-table:slot.die.upper.horizontal.positioning_schema_col2 csvw:name "value" .
 fom-table:slot.die.upper.horizontal.positioning_schema_col2 csvw:required true .
 
@@ -254,7 +254,7 @@ fom-table:slot.die.upper.vertical.positioning_schema csvw:columns fom-table:slot
 fom-table:slot.die.upper.vertical.positioning_schema csvw:primaryKey "time" .
 
 fom-table:slot.die.upper.vertical.positioning_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_CoatingDevice ;
+    chameo:hasMeasurementSample fom-ind:FOM_CoatingDevice ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:slot.die.upper.vertical.positioning .
 
 fom-table:slot.die.upper.vertical.positioning_schema_col1 a csvw:Column .
@@ -266,7 +266,7 @@ fom-table:slot.die.upper.vertical.positioning_schema_col1 csvw:required true .
 fom-table:slot.die.upper.vertical.positioning_schema_col2 a csvw:Column .
 fom-table:slot.die.upper.vertical.positioning_schema_col2 csvw:propertyUrl coater:hasCoaterHeadVerticalPositionData .
 fom-table:slot.die.upper.vertical.positioning_schema_col2 csvw:datatype xsd:decimal .
-fom-table:slot.die.upper.vertical.positioning_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#MilliMetre> .
+fom-table:slot.die.upper.vertical.positioning_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#MilliMetre> .
 fom-table:slot.die.upper.vertical.positioning_schema_col2 csvw:name "value" .
 fom-table:slot.die.upper.vertical.positioning_schema_col2 csvw:required true .
 
@@ -280,8 +280,8 @@ fom-table:oven1.temperature.setpoint_schema csvw:columns fom-table:oven1.tempera
 fom-table:oven1.temperature.setpoint_schema csvw:columns fom-table:oven1.temperature.setpoint_schema_col2 .
 fom-table:oven1.temperature.setpoint_schema csvw:primaryKey "time" .
 
-fom-table:oven1.temperature.setpoint_process a equipment:DeviceControlProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_Oven1 ;
+fom-table:oven1.temperature.setpoint_process a fom-table:DeviceControlProcess ;
+    chameo:hasInteractionWithSample fom-ind:FOM_Oven1 ;
     emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 fom-table:oven1.temperature.setpoint .
 
 fom-table:oven1.temperature.setpoint_schema_col1 a csvw:Column .
@@ -293,7 +293,7 @@ fom-table:oven1.temperature.setpoint_schema_col1 csvw:required true .
 fom-table:oven1.temperature.setpoint_schema_col2 a csvw:Column .
 fom-table:oven1.temperature.setpoint_schema_col2 csvw:propertyUrl coater:hasFurnaceTemperatureControl .
 fom-table:oven1.temperature.setpoint_schema_col2 csvw:datatype xsd:decimal .
-fom-table:oven1.temperature.setpoint_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#DegreeCelsius> .
+fom-table:oven1.temperature.setpoint_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#DegreeCelsius> .
 fom-table:oven1.temperature.setpoint_schema_col2 csvw:name "value" .
 fom-table:oven1.temperature.setpoint_schema_col2 csvw:required true .
 
@@ -308,7 +308,7 @@ fom-table:oven1.inlet.fan.speed_schema csvw:columns fom-table:oven1.inlet.fan.sp
 fom-table:oven1.inlet.fan.speed_schema csvw:primaryKey "time" .
 
 fom-table:oven1.inlet.fan.speed_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_Inlet1 ;
+    chameo:hasMeasurementSample fom-ind:FOM_Inlet1 ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:oven1.inlet.fan.speed .
 
 fom-table:oven1.inlet.fan.speed_schema_col1 a csvw:Column .
@@ -320,7 +320,7 @@ fom-table:oven1.inlet.fan.speed_schema_col1 csvw:required true .
 fom-table:oven1.inlet.fan.speed_schema_col2 a csvw:Column .
 fom-table:oven1.inlet.fan.speed_schema_col2 csvw:propertyUrl coater:hasFurnaceFanData .
 fom-table:oven1.inlet.fan.speed_schema_col2 csvw:datatype xsd:decimal .
-fom-table:oven1.inlet.fan.speed_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#RevolutionPerMinute> .
+fom-table:oven1.inlet.fan.speed_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#RevolutionPerMinute> .
 fom-table:oven1.inlet.fan.speed_schema_col2 csvw:name "value" .
 fom-table:oven1.inlet.fan.speed_schema_col2 csvw:required true .
 
@@ -335,7 +335,7 @@ fom-table:oven1.outlet.fan.speed_schema csvw:columns fom-table:oven1.outlet.fan.
 fom-table:oven1.outlet.fan.speed_schema csvw:primaryKey "time" .
 
 fom-table:oven1.outlet.fan.speed_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_Outlet1 ;
+    chameo:hasMeasurementSample fom-ind:FOM_Outlet1 ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:oven1.outlet.fan.speed .
 
 fom-table:oven1.outlet.fan.speed_schema_col1 a csvw:Column .
@@ -347,7 +347,7 @@ fom-table:oven1.outlet.fan.speed_schema_col1 csvw:required true .
 fom-table:oven1.outlet.fan.speed_schema_col2 a csvw:Column .
 fom-table:oven1.outlet.fan.speed_schema_col2 csvw:propertyUrl coater:hasFurnaceFanData .
 fom-table:oven1.outlet.fan.speed_schema_col2 csvw:datatype xsd:decimal .
-fom-table:oven1.outlet.fan.speed_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#RevolutionPerMinute> .
+fom-table:oven1.outlet.fan.speed_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#RevolutionPerMinute> .
 fom-table:oven1.outlet.fan.speed_schema_col2 csvw:name "value" .
 fom-table:oven1.outlet.fan.speed_schema_col2 csvw:required true .
 
@@ -362,7 +362,7 @@ fom-table:oven1.inlet.temperature_schema csvw:columns fom-table:oven1.inlet.temp
 fom-table:oven1.inlet.temperature_schema csvw:primaryKey "time" .
 
 fom-table:oven1.inlet.temperature_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_Inlet1 ;
+    chameo:hasMeasurementSample fom-ind:FOM_Inlet1 ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:oven1.inlet.temperature .
 
 fom-table:oven1.inlet.temperature_schema_col1 a csvw:Column .
@@ -374,7 +374,7 @@ fom-table:oven1.inlet.temperature_schema_col1 csvw:required true .
 fom-table:oven1.inlet.temperature_schema_col2 a csvw:Column .
 fom-table:oven1.inlet.temperature_schema_col2 csvw:propertyUrl coater:hasFurnaceTemperatureData .
 fom-table:oven1.inlet.temperature_schema_col2 csvw:datatype xsd:decimal .
-fom-table:oven1.inlet.temperature_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#DegreeCelsius> .
+fom-table:oven1.inlet.temperature_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#DegreeCelsius> .
 fom-table:oven1.inlet.temperature_schema_col2 csvw:name "value" .
 fom-table:oven1.inlet.temperature_schema_col2 csvw:required true .
 
@@ -389,7 +389,7 @@ fom-table:oven1.outlet.temperature_schema csvw:columns fom-table:oven1.outlet.te
 fom-table:oven1.outlet.temperature_schema csvw:primaryKey "time" .
 
 fom-table:oven1.outlet.temperature_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_Outlet1 ;
+    chameo:hasMeasurementSample fom-ind:FOM_Outlet1 ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:oven1.outlet.temperature .
 
 fom-table:oven1.outlet.temperature_schema_col1 a csvw:Column .
@@ -401,7 +401,7 @@ fom-table:oven1.outlet.temperature_schema_col1 csvw:required true .
 fom-table:oven1.outlet.temperature_schema_col2 a csvw:Column .
 fom-table:oven1.outlet.temperature_schema_col2 csvw:propertyUrl coater:hasFurnaceTemperatureData .
 fom-table:oven1.outlet.temperature_schema_col2 csvw:datatype xsd:decimal .
-fom-table:oven1.outlet.temperature_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#DegreeCelsius> .
+fom-table:oven1.outlet.temperature_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#DegreeCelsius> .
 fom-table:oven1.outlet.temperature_schema_col2 csvw:name "value" .
 fom-table:oven1.outlet.temperature_schema_col2 csvw:required true .
 
@@ -416,7 +416,7 @@ fom-table:oven1.ir.power_schema csvw:columns fom-table:oven1.ir.power_schema_col
 fom-table:oven1.ir.power_schema csvw:primaryKey "time" .
 
 fom-table:oven1.ir.power_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_IRheater1 ;
+    chameo:hasMeasurementSample fom-ind:FOM_IRheater1 ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:oven1.ir.power .
 
 fom-table:oven1.ir.power_schema_col1 a csvw:Column .
@@ -428,7 +428,7 @@ fom-table:oven1.ir.power_schema_col1 csvw:required true .
 fom-table:oven1.ir.power_schema_col2 a csvw:Column .
 fom-table:oven1.ir.power_schema_col2 csvw:propertyUrl coater:hasFurnacePowerData .
 fom-table:oven1.ir.power_schema_col2 csvw:datatype xsd:decimal .
-fom-table:oven1.ir.power_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#KiloWatt> .
+fom-table:oven1.ir.power_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#KiloWatt> .
 fom-table:oven1.ir.power_schema_col2 csvw:name "value" .
 fom-table:oven1.ir.power_schema_col2 csvw:required true .
 
@@ -442,8 +442,8 @@ fom-table:oven2.temperature.setpoint_schema csvw:columns fom-table:oven2.tempera
 fom-table:oven2.temperature.setpoint_schema csvw:columns fom-table:oven2.temperature.setpoint_schema_col2 .
 fom-table:oven2.temperature.setpoint_schema csvw:primaryKey "time" .
 
-fom-table:oven2.temperature.setpoint_process a equipment:DeviceControlProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_Oven2 ;
+fom-table:oven2.temperature.setpoint_process a fom-table:DeviceControlProcess ;
+    chameo:hasInteractionWithSample fom-ind:FOM_Oven2 ;
     emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 fom-table:oven2.temperature.setpoint .
 
 fom-table:oven2.temperature.setpoint_schema_col1 a csvw:Column .
@@ -455,7 +455,7 @@ fom-table:oven2.temperature.setpoint_schema_col1 csvw:required true .
 fom-table:oven2.temperature.setpoint_schema_col2 a csvw:Column .
 fom-table:oven2.temperature.setpoint_schema_col2 csvw:propertyUrl coater:hasFurnaceTemperatureControl .
 fom-table:oven2.temperature.setpoint_schema_col2 csvw:datatype xsd:decimal .
-fom-table:oven2.temperature.setpoint_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#DegreeCelsius> .
+fom-table:oven2.temperature.setpoint_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#DegreeCelsius> .
 fom-table:oven2.temperature.setpoint_schema_col2 csvw:name "value" .
 fom-table:oven2.temperature.setpoint_schema_col2 csvw:required true .
 
@@ -470,7 +470,7 @@ fom-table:oven2.inlet.fan.speed_schema csvw:columns fom-table:oven2.inlet.fan.sp
 fom-table:oven2.inlet.fan.speed_schema csvw:primaryKey "time" .
 
 fom-table:oven2.inlet.fan.speed_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_Inlet2 ;
+    chameo:hasMeasurementSample fom-ind:FOM_Inlet2 ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:oven2.inlet.fan.speed .
 
 fom-table:oven2.inlet.fan.speed_schema_col1 a csvw:Column .
@@ -482,7 +482,7 @@ fom-table:oven2.inlet.fan.speed_schema_col1 csvw:required true .
 fom-table:oven2.inlet.fan.speed_schema_col2 a csvw:Column .
 fom-table:oven2.inlet.fan.speed_schema_col2 csvw:propertyUrl coater:hasFurnaceFanData .
 fom-table:oven2.inlet.fan.speed_schema_col2 csvw:datatype xsd:decimal .
-fom-table:oven2.inlet.fan.speed_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#RevolutionPerMinute> .
+fom-table:oven2.inlet.fan.speed_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#RevolutionPerMinute> .
 fom-table:oven2.inlet.fan.speed_schema_col2 csvw:name "value" .
 fom-table:oven2.inlet.fan.speed_schema_col2 csvw:required true .
 
@@ -497,7 +497,7 @@ fom-table:oven2.outlet.fan.speed_schema csvw:columns fom-table:oven2.outlet.fan.
 fom-table:oven2.outlet.fan.speed_schema csvw:primaryKey "time" .
 
 fom-table:oven2.outlet.fan.speed_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_Outlet2 ;
+    chameo:hasMeasurementSample fom-ind:FOM_Outlet2 ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:oven2.outlet.fan.speed .
 
 fom-table:oven2.outlet.fan.speed_schema_col1 a csvw:Column .
@@ -509,7 +509,7 @@ fom-table:oven2.outlet.fan.speed_schema_col1 csvw:required true .
 fom-table:oven2.outlet.fan.speed_schema_col2 a csvw:Column .
 fom-table:oven2.outlet.fan.speed_schema_col2 csvw:propertyUrl coater:hasFurnaceFanData .
 fom-table:oven2.outlet.fan.speed_schema_col2 csvw:datatype xsd:decimal .
-fom-table:oven2.outlet.fan.speed_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#RevolutionPerMinute> .
+fom-table:oven2.outlet.fan.speed_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#RevolutionPerMinute> .
 fom-table:oven2.outlet.fan.speed_schema_col2 csvw:name "value" .
 fom-table:oven2.outlet.fan.speed_schema_col2 csvw:required true .
 
@@ -524,7 +524,7 @@ fom-table:oven2.inlet.temperature_schema csvw:columns fom-table:oven2.inlet.temp
 fom-table:oven2.inlet.temperature_schema csvw:primaryKey "time" .
 
 fom-table:oven2.inlet.temperature_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_Inlet2 ;
+    chameo:hasMeasurementSample fom-ind:FOM_Inlet2 ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:oven2.inlet.temperature .
 
 fom-table:oven2.inlet.temperature_schema_col1 a csvw:Column .
@@ -536,7 +536,7 @@ fom-table:oven2.inlet.temperature_schema_col1 csvw:required true .
 fom-table:oven2.inlet.temperature_schema_col2 a csvw:Column .
 fom-table:oven2.inlet.temperature_schema_col2 csvw:propertyUrl coater:hasFurnaceTemperatureData .
 fom-table:oven2.inlet.temperature_schema_col2 csvw:datatype xsd:decimal .
-fom-table:oven2.inlet.temperature_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#DegreeCelsius> .
+fom-table:oven2.inlet.temperature_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#DegreeCelsius> .
 fom-table:oven2.inlet.temperature_schema_col2 csvw:name "value" .
 fom-table:oven2.inlet.temperature_schema_col2 csvw:required true .
 
@@ -551,7 +551,7 @@ fom-table:oven2.outlet.temperature_schema csvw:columns fom-table:oven2.outlet.te
 fom-table:oven2.outlet.temperature_schema csvw:primaryKey "time" .
 
 fom-table:oven2.outlet.temperature_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_Outlet2 ;
+    chameo:hasMeasurementSample fom-ind:FOM_Outlet2 ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:oven2.outlet.temperature .
 
 fom-table:oven2.outlet.temperature_schema_col1 a csvw:Column .
@@ -563,7 +563,7 @@ fom-table:oven2.outlet.temperature_schema_col1 csvw:required true .
 fom-table:oven2.outlet.temperature_schema_col2 a csvw:Column .
 fom-table:oven2.outlet.temperature_schema_col2 csvw:propertyUrl coater:hasFurnaceTemperatureData .
 fom-table:oven2.outlet.temperature_schema_col2 csvw:datatype xsd:decimal .
-fom-table:oven2.outlet.temperature_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#DegreeCelsius> .
+fom-table:oven2.outlet.temperature_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#DegreeCelsius> .
 fom-table:oven2.outlet.temperature_schema_col2 csvw:name "value" .
 fom-table:oven2.outlet.temperature_schema_col2 csvw:required true .
 
@@ -578,7 +578,7 @@ fom-table:oven2.ir.power_schema csvw:columns fom-table:oven2.ir.power_schema_col
 fom-table:oven2.ir.power_schema csvw:primaryKey "time" .
 
 fom-table:oven2.ir.power_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_IRheater2 ;
+    chameo:hasMeasurementSample fom-ind:FOM_IRheater2 ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:oven2.ir.power .
 
 fom-table:oven2.ir.power_schema_col1 a csvw:Column .
@@ -590,7 +590,7 @@ fom-table:oven2.ir.power_schema_col1 csvw:required true .
 fom-table:oven2.ir.power_schema_col2 a csvw:Column .
 fom-table:oven2.ir.power_schema_col2 csvw:propertyUrl coater:hasFurnacePowerData .
 fom-table:oven2.ir.power_schema_col2 csvw:datatype xsd:decimal .
-fom-table:oven2.ir.power_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#KiloWatt> .
+fom-table:oven2.ir.power_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#KiloWatt> .
 fom-table:oven2.ir.power_schema_col2 csvw:name "value" .
 fom-table:oven2.ir.power_schema_col2 csvw:required true .
 
@@ -604,8 +604,8 @@ fom-table:oven3.temperature.setpoint_schema csvw:columns fom-table:oven3.tempera
 fom-table:oven3.temperature.setpoint_schema csvw:columns fom-table:oven3.temperature.setpoint_schema_col2 .
 fom-table:oven3.temperature.setpoint_schema csvw:primaryKey "time" .
 
-fom-table:oven3.temperature.setpoint_process a equipment:DeviceControlProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_Oven3 ;
+fom-table:oven3.temperature.setpoint_process a fom-table:DeviceControlProcess ;
+    chameo:hasInteractionWithSample fom-ind:FOM_Oven3 ;
     emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 fom-table:oven3.temperature.setpoint .
 
 fom-table:oven3.temperature.setpoint_schema_col1 a csvw:Column .
@@ -617,7 +617,7 @@ fom-table:oven3.temperature.setpoint_schema_col1 csvw:required true .
 fom-table:oven3.temperature.setpoint_schema_col2 a csvw:Column .
 fom-table:oven3.temperature.setpoint_schema_col2 csvw:propertyUrl coater:hasFurnaceTemperatureControl .
 fom-table:oven3.temperature.setpoint_schema_col2 csvw:datatype xsd:decimal .
-fom-table:oven3.temperature.setpoint_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#DegreeCelsius> .
+fom-table:oven3.temperature.setpoint_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#DegreeCelsius> .
 fom-table:oven3.temperature.setpoint_schema_col2 csvw:name "value" .
 fom-table:oven3.temperature.setpoint_schema_col2 csvw:required true .
 
@@ -632,7 +632,7 @@ fom-table:oven3.inlet.fan.speed_schema csvw:columns fom-table:oven3.inlet.fan.sp
 fom-table:oven3.inlet.fan.speed_schema csvw:primaryKey "time" .
 
 fom-table:oven3.inlet.fan.speed_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_Inlet3 ;
+    chameo:hasMeasurementSample fom-ind:FOM_Inlet3 ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:oven3.inlet.fan.speed .
 
 fom-table:oven3.inlet.fan.speed_schema_col1 a csvw:Column .
@@ -644,7 +644,7 @@ fom-table:oven3.inlet.fan.speed_schema_col1 csvw:required true .
 fom-table:oven3.inlet.fan.speed_schema_col2 a csvw:Column .
 fom-table:oven3.inlet.fan.speed_schema_col2 csvw:propertyUrl coater:hasFurnaceFanData .
 fom-table:oven3.inlet.fan.speed_schema_col2 csvw:datatype xsd:decimal .
-fom-table:oven3.inlet.fan.speed_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#RevolutionPerMinute> .
+fom-table:oven3.inlet.fan.speed_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#RevolutionPerMinute> .
 fom-table:oven3.inlet.fan.speed_schema_col2 csvw:name "value" .
 fom-table:oven3.inlet.fan.speed_schema_col2 csvw:required true .
 
@@ -659,7 +659,7 @@ fom-table:oven3.outlet.fan.speed_schema csvw:columns fom-table:oven3.outlet.fan.
 fom-table:oven3.outlet.fan.speed_schema csvw:primaryKey "time" .
 
 fom-table:oven3.outlet.fan.speed_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_Outlet3 ;
+    chameo:hasMeasurementSample fom-ind:FOM_Outlet3 ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:oven3.outlet.fan.speed .
 
 fom-table:oven3.outlet.fan.speed_schema_col1 a csvw:Column .
@@ -671,7 +671,7 @@ fom-table:oven3.outlet.fan.speed_schema_col1 csvw:required true .
 fom-table:oven3.outlet.fan.speed_schema_col2 a csvw:Column .
 fom-table:oven3.outlet.fan.speed_schema_col2 csvw:propertyUrl coater:hasFurnaceFanData .
 fom-table:oven3.outlet.fan.speed_schema_col2 csvw:datatype xsd:decimal .
-fom-table:oven3.outlet.fan.speed_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#RevolutionPerMinute> .
+fom-table:oven3.outlet.fan.speed_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#RevolutionPerMinute> .
 fom-table:oven3.outlet.fan.speed_schema_col2 csvw:name "value" .
 fom-table:oven3.outlet.fan.speed_schema_col2 csvw:required true .
 
@@ -686,7 +686,7 @@ fom-table:oven3.inlet.temperature_schema csvw:columns fom-table:oven3.inlet.temp
 fom-table:oven3.inlet.temperature_schema csvw:primaryKey "time" .
 
 fom-table:oven3.inlet.temperature_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_Inlet3 ;
+    chameo:hasMeasurementSample fom-ind:FOM_Inlet3 ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:oven3.inlet.temperature .
 
 fom-table:oven3.inlet.temperature_schema_col1 a csvw:Column .
@@ -698,7 +698,7 @@ fom-table:oven3.inlet.temperature_schema_col1 csvw:required true .
 fom-table:oven3.inlet.temperature_schema_col2 a csvw:Column .
 fom-table:oven3.inlet.temperature_schema_col2 csvw:propertyUrl coater:hasFurnaceTemperatureData .
 fom-table:oven3.inlet.temperature_schema_col2 csvw:datatype xsd:decimal .
-fom-table:oven3.inlet.temperature_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#DegreeCelsius> .
+fom-table:oven3.inlet.temperature_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#DegreeCelsius> .
 fom-table:oven3.inlet.temperature_schema_col2 csvw:name "value" .
 fom-table:oven3.inlet.temperature_schema_col2 csvw:required true .
 
@@ -713,7 +713,7 @@ fom-table:oven3.outlet.temperature_schema csvw:columns fom-table:oven3.outlet.te
 fom-table:oven3.outlet.temperature_schema csvw:primaryKey "time" .
 
 fom-table:oven3.outlet.temperature_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_Outlet3 ;
+    chameo:hasMeasurementSample fom-ind:FOM_Outlet3 ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:oven3.outlet.temperature .
 
 fom-table:oven3.outlet.temperature_schema_col1 a csvw:Column .
@@ -725,7 +725,7 @@ fom-table:oven3.outlet.temperature_schema_col1 csvw:required true .
 fom-table:oven3.outlet.temperature_schema_col2 a csvw:Column .
 fom-table:oven3.outlet.temperature_schema_col2 csvw:propertyUrl coater:hasFurnaceTemperatureData .
 fom-table:oven3.outlet.temperature_schema_col2 csvw:datatype xsd:decimal .
-fom-table:oven3.outlet.temperature_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#DegreeCelsius> .
+fom-table:oven3.outlet.temperature_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#DegreeCelsius> .
 fom-table:oven3.outlet.temperature_schema_col2 csvw:name "value" .
 fom-table:oven3.outlet.temperature_schema_col2 csvw:required true .
 
@@ -740,7 +740,7 @@ fom-table:oven3.ir.power_schema csvw:columns fom-table:oven3.ir.power_schema_col
 fom-table:oven3.ir.power_schema csvw:primaryKey "time" .
 
 fom-table:oven3.ir.power_process a chameo:CharacterisationMeasurementProcess ;
-    emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 fom-ind:FOM_IRheater3 ;
+    chameo:hasMeasurementSample fom-ind:FOM_IRheater3 ;
     emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 fom-table:oven3.ir.power .
 
 fom-table:oven3.ir.power_schema_col1 a csvw:Column .
@@ -752,7 +752,7 @@ fom-table:oven3.ir.power_schema_col1 csvw:required true .
 fom-table:oven3.ir.power_schema_col2 a csvw:Column .
 fom-table:oven3.ir.power_schema_col2 csvw:propertyUrl coater:hasFurnacePowerData .
 fom-table:oven3.ir.power_schema_col2 csvw:datatype xsd:decimal .
-fom-table:oven3.ir.power_schema_col2 emmo:EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 <https://w3id.org/emmo#KiloWatt> .
+fom-table:oven3.ir.power_schema_col2 emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 <https://w3id.org/emmo#KiloWatt> .
 fom-table:oven3.ir.power_schema_col2 csvw:name "value" .
 fom-table:oven3.ir.power_schema_col2 csvw:required true .
 
